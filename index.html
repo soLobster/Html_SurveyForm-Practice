@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">설문조사</h1>
+            <p id="description">시간을 내주셔서 감사합니다. 아래 양식에 맞게 기입해 주십시오.</p>
+        </header>
+        <div class="entireForm">
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name"> 이름 </label>
+                <input id="name" name="name" type="text" class="form-group" placeholder="이름을 적어주세요" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email"> 이메일 </label>
+                <input id="email" type="email" name="email"  placeholder="이메일을 적어주세요" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number"> 나이 </label>
+                <input id="number" name="number" type="number" min="20" max="40" placeholder="나이" required>
+            </div>
+            <div class="form-group">
+                <label id="subject-label" for="dropdown">수강 언어</label>
+                <select name = "subject" id="dropdown">
+                <option disabled selected value>과목을 선택해 주세요.</option>
+                <option value="subject">영어</option>
+                <option value="subject">일본어</option>
+                <option value="subject">중국어</option>
+                <option value="subject">스페인어</option>
+                <option value="subject">프랑스어</option>
+                </select>
+                </div>
+            <div class="form-group">
+                <p>무슨 이유로 수강하시나요?</p>
+                <label>
+                    <input type="radio" name="why-register" value="forJob" class="input-radio"/>
+                    취업
+                </label>    
+                <label>  
+                    <input type="radio" name="why-register" value="forGraduate" class="input-radio"/>
+                    졸업 자격
+                </label>    
+                <label>
+                    <input type="radio" name="why-register" value="JustWantIt" class="input-radio"/>
+                    언어 습득
+                </label>    
+            </div>
+            <div class="form-group">
+                <p>강의 개선점에 대하여 체크해 주십시오 (모두 체크해 주십시오)</p>
+                <label>
+                    <input type="checkbox" value="teacher" name="improvements">강사
+                </label>
+                <label>
+                    <input type="checkbox" value="book" name="improvements">교재
+                </label>
+                    <label><input type="checkbox" value="facility" name="improvements">시설
+                </label>
+                <label>
+                    <input type="checkbox" value="register-fee" name="improvements">등록비
+                </label>
+            </div>
+            <div class="form-group">
+                <p>생각나는대로 의견을 남겨주세요</p>
+                <textarea id="message" class="message-area" rows="5" cols="30" placeholder="의견을 남겨주세요"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="final-submit">완료</button>
+            </div>
+        </div>
+        </form>
+    </div>
+    </body>
+</html>

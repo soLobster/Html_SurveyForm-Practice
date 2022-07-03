@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body {
+    background-color: antiquewhite;
+}
+
+.header {
+    margin-top: 50px;
+    text-align: center
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+#name {
+    background-color: white;
+}
+
+#description {
+    color: black;
+}
+
+p {
+    color: white;
+}
+
+.message-area {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.entireForm {
+    color: white;
+    background-color: rgb(115, 173, 174);
+    text-align: center;
+    width: 50%;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-left: 25%;
+}
+
+.form-group {
+    background-color: rgb(143, 177, 216) ;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
